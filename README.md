@@ -74,8 +74,6 @@ After adding the gradle depedency from above you can go to your xml layout and a
     android:id="@+id/squareprogressbar"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_centerInParent="true"
-    android:layout_marginBottom="20dp"
     android:gravity="center"/>
 ```
 
