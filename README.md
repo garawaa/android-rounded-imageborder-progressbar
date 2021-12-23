@@ -69,14 +69,15 @@ implementation 'com.github.garawaa:android-rounded-imageborder-progressbar:1.6.5
 After adding the gradle depedency from above you can go to your xml layout and add the following code for a squareprogressbar:
 
 ```xml
-<ch.halcyon.squareprogressbar.SquareProgressBar
-android:id="@+id/sprogressbar"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_alignParentTop="true"
-android:layout_centerHorizontal="true"
-android:paddingTop="20dp" >
-</ch.halcyon.squareprogressbar.SquareProgressBar>
+
+<com.garawaa.squareprogressbar.SquareProgressBar
+    android:id="@+id/subi2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_marginBottom="20dp"
+    android:gravity="center"></com.garawaa.squareprogressbar.SquareProgressBar>
+
 ```
 
 To set some basic settings use the following java-code:
