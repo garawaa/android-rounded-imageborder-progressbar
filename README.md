@@ -51,14 +51,14 @@ This library now works with gradle and will soon be available on the central mav
 allprojects {
 repositories {
 jcenter()
-maven { url "https://jcenter.bintray.com" }
+maven { url 'https://jitpack.io' }
 }
 }
 Then in your app build.gradle:
 
 dependencies {
 // other repos ...
-implementation 'ch.halcyon:squareprogressbar:1.6.4'
+implementation 'com.github.garawaa:android-rounded-imageborder-progressbar:1.6.5'
 }
 ```
 
