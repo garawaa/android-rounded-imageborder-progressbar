@@ -87,4 +87,4 @@ squareProgressBar.setImage(R.drawable.example);
 squareProgressBar.setProgress(50.0);
 ```
 
-Now you can make the squareprogressbar as fancy as you like. Check the [usage page](https://github.com/mrwonderman/android-square-progressbar/wiki/Usage) for all the different possiblities.
+Now you can make the squareprogressbar as fancy as you like. Check the [usage page](https://github.com/garawaa/android-rounded-imageborder-progressbar/wiki/Usage) for all the different possiblities.
