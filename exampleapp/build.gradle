@@ -2,8 +2,8 @@ apply plugin: 'com.android.application'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: '*.jar')
+    implementation project(path: ':squareprogressbar')
     //implementation project(':squareprogressbar')
-    implementation 'com.github.garawaa:android-rounded-imageborder-progressbar:1.6.5'
 }
 
 android {

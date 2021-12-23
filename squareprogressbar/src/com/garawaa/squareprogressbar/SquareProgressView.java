@@ -27,7 +27,7 @@ public class SquareProgressView extends View {
 
 
 
-    private float outlinestrokewidth = 2;
+    private float outlinestrokewidth = 3;
     private float centerlinestrokewidth = 3;
 
 
