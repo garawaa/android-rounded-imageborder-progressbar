@@ -3,7 +3,7 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'maven-publish'
 //apply plugin: "com.jfrog.bintray"
 
-version = "1.6.5"
+version = project.version
 
 android {
     compileSdkVersion 30
@@ -12,7 +12,7 @@ android {
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
-        versionName "1.0"
+        versionName project.version
 
     }
 
@@ -68,9 +68,9 @@ install {
                 }
                 developers {
                     developer {
-                        id 'yansigner'
-                        name 'Yannick Signer'
-                        email 'yannick@signer.pro'
+                        id 'garawaa'
+                        name 'garawaa'
+                        email 'garawaa@gmail.com'
                     }
                 }
                 scm {
@@ -133,7 +133,7 @@ afterEvaluate {
 
                 groupId = 'com.github.garawaa'
                 artifactId = 'squareprogressbar'
-                version = '1.6.5'
+                version = project.version
             }
         }
     }
