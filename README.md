@@ -44,8 +44,7 @@ If you have questions about the code or if you need some help, you can try the [
 ## Usage
 
 ### Gradle
-
-This library now works with gradle and will soon be available on the central maven repository. For the moment its on jCenter at [jitpack.io](https://jitpack.io/#garawaa/android-rounded-imageborder-progressbar/1.6.5). Just add the following repository to your root build.gradle:
+Just add the following repository to your root build.gradle:
 
 ```
 allprojects {
@@ -54,8 +53,11 @@ jcenter()
 maven { url 'https://jitpack.io' }
 }
 }
+```
+
 Then in your app build.gradle:
 
+```
 dependencies {
 // other repos ...
 implementation 'com.github.garawaa:android-rounded-imageborder-progressbar:1.6.5'
