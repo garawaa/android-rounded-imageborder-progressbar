@@ -45,7 +45,7 @@ If you have questions about the code or if you need some help, you can try the [
 
 ### Gradle
 
-This library now works with gradle and will soon be available on the central maven repository. For the moment its on jCenter at [Bintray](https://bintray.com/mrwonderman/maven/squareprogressbar/view). Just add the following repository to your root build.gradle:
+This library now works with gradle and will soon be available on the central maven repository. For the moment its on jCenter at [jitpack.io](https://jitpack.io/#garawaa/android-rounded-imageborder-progressbar/1.6.5). Just add the following repository to your root build.gradle:
 
 ```
 allprojects {
