@@ -73,8 +73,7 @@ After adding the gradle depedency from above you can go to your xml layout and a
 <com.garawaa.squareprogressbar.SquareProgressBar
     android:id="@+id/squareprogressbar"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:gravity="center"/>
+    android:layout_height="wrap_content"/>
 ```
 
 To set some basic settings use the following java-code:
