@@ -600,7 +600,7 @@ public class SquareProgressBar extends RelativeLayout {
 		return bar.getOutlinestrokewidth();
 	}
 
-	public void setOutlinestrokewidth(float outlinestrokewidth) {
+	public void setOutlinestrokewidth(int outlinestrokewidth) {
 		bar.setOutlinestrokewidth(outlinestrokewidth);
 	}
 
@@ -608,7 +608,8 @@ public class SquareProgressBar extends RelativeLayout {
 		return bar.getCenterlinestrokewidth();
 	}
 
-	public void setCenterlinestrokewidth(float centerlinestrokewidth) {
+	public void setCenterlinestrokewidth(int centerlinestrokewidth) {
+
 		bar.setCenterlinestrokewidth(centerlinestrokewidth);
 	}
 

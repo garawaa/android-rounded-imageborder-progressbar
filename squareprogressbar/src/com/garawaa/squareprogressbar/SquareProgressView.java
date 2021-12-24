@@ -27,11 +27,8 @@ public class SquareProgressView extends View {
 
 
 
-    private float outlinestrokewidth = 3;
-    private float centerlinestrokewidth = 3;
-
-
-
+    private float outlinestrokewidth = 1; //unit is dp
+    private float centerlinestrokewidth = 1; //unit is dp
 
     private Canvas canvas;
 
@@ -65,8 +62,10 @@ public class SquareProgressView extends View {
         return outlinestrokewidth;
     }
 
-    public void setOutlinestrokewidth(float outlinestrokewidth) {
+    public void setOutlinestrokewidth(int outlinestrokewidth) {
         this.outlinestrokewidth = outlinestrokewidth;
+        outlinePaint.setStrokeWidth(CalculationUtil.convertDpToPx(
+                outlinestrokewidth, getContext()));
         this.invalidate();
     }
 
@@ -74,8 +73,10 @@ public class SquareProgressView extends View {
         return centerlinestrokewidth;
     }
 
-    public void setCenterlinestrokewidth(float centerlinestrokewidth) {
+    public void setCenterlinestrokewidth(int centerlinestrokewidth) {
         this.centerlinestrokewidth = centerlinestrokewidth;
+        centerlinePaint.setStrokeWidth(CalculationUtil.convertDpToPx(
+                centerlinestrokewidth, getContext()));
         this.invalidate();
     }
     private float roundedCornersRadius = 0;
@@ -115,14 +116,16 @@ public class SquareProgressView extends View {
         outlinePaint = new Paint();
         outlinePaint.setColor(context.getResources().getColor(
                 android.R.color.black));
-        outlinePaint.setStrokeWidth(outlinestrokewidth);
+        outlinePaint.setStrokeWidth(CalculationUtil.convertDpToPx(
+                outlinestrokewidth, getContext()));
         outlinePaint.setAntiAlias(true);
         outlinePaint.setStyle(Style.STROKE);
 
         centerlinePaint = new Paint();
         centerlinePaint.setColor(context.getResources().getColor(
                 android.R.color.darker_gray));
-        centerlinePaint.setStrokeWidth(centerlinestrokewidth);
+        centerlinePaint.setStrokeWidth(CalculationUtil.convertDpToPx(
+                centerlinestrokewidth, getContext()));
         centerlinePaint.setAntiAlias(true);
         centerlinePaint.setStyle(Style.STROKE);
 
@@ -165,6 +168,7 @@ public class SquareProgressView extends View {
 
 
         if (!isCcw()){
+            //code for drawing clockwise direction
             Path path = new Path();
             DrawStop drawEnd = getDrawEnd((scope / 100) * Float.valueOf(String.valueOf(progress)), canvas);
 
@@ -223,6 +227,7 @@ public class SquareProgressView extends View {
 
         } else {
 
+            //code for CCW drawing
             Path path = new Path();
             DrawStop drawEnd = getDrawEndCCW((scope / 100) * Float.valueOf(String.valueOf(progress)), canvas);
 

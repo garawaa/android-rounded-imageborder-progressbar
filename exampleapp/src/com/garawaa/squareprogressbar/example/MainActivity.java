@@ -445,7 +445,7 @@ public class MainActivity extends Activity {
                         title.setText("Source");
                         return headerItem;
                     case 29:
-                        String text = "<font color=#4183C4>garawaa</font>/<b><font color=#4183C4>android-square-progressbar</font></b> (v. 1.6.6)";
+                        String text = "<font color=#4183C4>garawaa</font>/<b><font color=#4183C4>android-square-progressbar</font></b> (v. 1.6.7)";
                         githublink.setText(Html.fromHtml(text));
                         githubItem.setOnClickListener(new OnClickListener() {
 
@@ -453,7 +453,7 @@ public class MainActivity extends Activity {
                             public void onClick(View arg0) {
                                 Intent browserIntent = new Intent(
                                         Intent.ACTION_VIEW,
-                                        Uri.parse("https://github.com/garawaa/android-square-progressbar"));
+                                        Uri.parse("https://github.com/garawaa/android-rounded-imageborder-progressbar"));
                                 startActivity(browserIntent);
                             }
                         });
