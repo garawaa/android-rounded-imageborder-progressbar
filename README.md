@@ -47,7 +47,7 @@ Then in your app build.gradle:
 ```
 dependencies {
 // other repos ...
-implementation 'com.github.garawaa:android-rounded-imageborder-progressbar:1.6.6'
+implementation 'com.github.garawaa:android-rounded-imageborder-progressbar:$latest-version'
 }
 ```
 
